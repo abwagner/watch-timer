@@ -1,0 +1,4 @@
+// Copy to Signing.local.xcconfig and fill in your own Apple developer settings.
+// Signing.local.xcconfig is ignored by Git and is never part of a public snapshot.
+DEVELOPMENT_TEAM =
+DIAL_TIMER_BUNDLE_PREFIX = com.example.yourhandle

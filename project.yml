@@ -1,0 +1,43 @@
+name: DialTimer
+options:
+  deploymentTarget:
+    watchOS: '11.0'
+settings:
+  base:
+    SWIFT_VERSION: '6.0'
+    GENERATE_INFOPLIST_FILE: true
+    CODE_SIGN_STYLE: Automatic
+    MARKETING_VERSION: '0.1.0'
+    CURRENT_PROJECT_VERSION: 2
+configFiles:
+  Debug: Config/Signing.xcconfig
+  Release: Config/Signing.xcconfig
+targets:
+  DialTimer:
+    type: application
+    platform: watchOS
+    sources: [Watch]
+    dependencies:
+      - target: TimerComplication
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(DIAL_TIMER_BUNDLE_PREFIX).dialtimer
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_CFBundleDisplayName: Dial Timer
+        INFOPLIST_KEY_WKApplication: true
+        INFOPLIST_KEY_WKWatchOnly: true
+    scheme: {}
+  TimerComplication:
+    type: app-extension
+    platform: watchOS
+    sources: [Widgets]
+    info:
+      path: Config/WidgetInfo.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(DIAL_TIMER_BUNDLE_PREFIX).dialtimer.complication
+        SKIP_INSTALL: true

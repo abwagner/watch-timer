@@ -1,0 +1,14 @@
+.DS_Store
+DerivedData/
+build/
+xcuserdata/
+*.xcuserstate
+Config/Signing.local.xcconfig
+.env
+.env.*
+!.env.example
+*.p8
+*.p12
+*.pem
+*.key
+*.mobileprovision

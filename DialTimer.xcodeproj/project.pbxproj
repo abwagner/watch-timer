@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E693841B02C262D5968B879 /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39226A684C4FA8C30DD800D3 /* TimerState.swift */; };
+		79DEEDBD4AB795B77BDB4C9D /* TimerComplication.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AE5EF62AF6F79B60E2BC0A19 /* TimerComplication.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		817B07FA2267EFAF70810536 /* DialTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6596DC7FF9504B89886D5D46 /* DialTimerApp.swift */; };
+		E45048DAE70B06AB3E3A8208 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F2F79EC387D0EECD0D9E22 /* Assets.xcassets */; };
+		E70952623EEAD740B59F286F /* TimerComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907FE2A479D0B057B903A25B /* TimerComplication.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37F9AA2467C03A045B67575C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1E371832C202F0BFF737053 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F526C302D94243AABDDD28BB;
+			remoteInfo = TimerComplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		760B38309B351A417984DF08 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				79DEEDBD4AB795B77BDB4C9D /* TimerComplication.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		39226A684C4FA8C30DD800D3 /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
+		55F2F79EC387D0EECD0D9E22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6596DC7FF9504B89886D5D46 /* DialTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialTimerApp.swift; sourceTree = "<group>"; };
+		8968142496F28F262DF71A5A /* DialTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DialTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		907FE2A479D0B057B903A25B /* TimerComplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerComplication.swift; sourceTree = "<group>"; };
+		AE5EF62AF6F79B60E2BC0A19 /* TimerComplication.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimerComplication.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB47E2C900DC5D9DCDC747BC /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1309E3607AAEFD47CA7B2FAA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				CB47E2C900DC5D9DCDC747BC /* Signing.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		345F7B022622B1562B88BD98 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				907FE2A479D0B057B903A25B /* TimerComplication.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		604B677119EA7D6E3D53F185 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				55F2F79EC387D0EECD0D9E22 /* Assets.xcassets */,
+				6596DC7FF9504B89886D5D46 /* DialTimerApp.swift */,
+				39226A684C4FA8C30DD800D3 /* TimerState.swift */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		D04307C09B3999A7A6239B78 = {
+			isa = PBXGroup;
+			children = (
+				1309E3607AAEFD47CA7B2FAA /* Config */,
+				604B677119EA7D6E3D53F185 /* Watch */,
+				345F7B022622B1562B88BD98 /* Widgets */,
+				DB3D5604E55F5F11E8A42361 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB3D5604E55F5F11E8A42361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8968142496F28F262DF71A5A /* DialTimer.app */,
+				AE5EF62AF6F79B60E2BC0A19 /* TimerComplication.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		227915F755DDFA43DEC119CE /* DialTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2A60D0CCAE6B57DC1DC594B /* Build configuration list for PBXNativeTarget "DialTimer" */;
+			buildPhases = (
+				721B4F07E4C6E877736CDF1C /* Sources */,
+				97FBCDA53AFFAA863C2F576A /* Resources */,
+				760B38309B351A417984DF08 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5457E2106B2BF58DE195C8F8 /* PBXTargetDependency */,
+			);
+			name = DialTimer;
+			packageProductDependencies = (
+			);
+			productName = DialTimer;
+			productReference = 8968142496F28F262DF71A5A /* DialTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F526C302D94243AABDDD28BB /* TimerComplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D424D3554DE59C43DFBC8345 /* Build configuration list for PBXNativeTarget "TimerComplication" */;
+			buildPhases = (
+				538070CA87D41243FCA56228 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimerComplication;
+			packageProductDependencies = (
+			);
+			productName = TimerComplication;
+			productReference = AE5EF62AF6F79B60E2BC0A19 /* TimerComplication.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1E371832C202F0BFF737053 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					227915F755DDFA43DEC119CE = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					F526C302D94243AABDDD28BB = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FE7D2FF41D797FC6CA68CA4F /* Build configuration list for PBXProject "DialTimer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D04307C09B3999A7A6239B78;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = DB3D5604E55F5F11E8A42361 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				227915F755DDFA43DEC119CE /* DialTimer */,
+				F526C302D94243AABDDD28BB /* TimerComplication */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97FBCDA53AFFAA863C2F576A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45048DAE70B06AB3E3A8208 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		538070CA87D41243FCA56228 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E70952623EEAD740B59F286F /* TimerComplication.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721B4F07E4C6E877736CDF1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				817B07FA2267EFAF70810536 /* DialTimerApp.swift in Sources */,
+				4E693841B02C262D5968B879 /* TimerState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5457E2106B2BF58DE195C8F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F526C302D94243AABDDD28BB /* TimerComplication */;
+			targetProxy = 37F9AA2467C03A045B67575C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		330E938608F02F9242D88CDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Config/WidgetInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(DIAL_TIMER_BUNDLE_PREFIX).dialtimer.complication";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		5AE4604C8556386B859049C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_KEY_CFBundleDisplayName = "Dial Timer";
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(DIAL_TIMER_BUNDLE_PREFIX).dialtimer";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		9400F52FF2D94CE64B4E82B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_KEY_CFBundleDisplayName = "Dial Timer";
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(DIAL_TIMER_BUNDLE_PREFIX).dialtimer";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		953230C2AA5392A3D2B519EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB47E2C900DC5D9DCDC747BC /* Signing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		B888AB59A8AB80C75576AE08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Config/WidgetInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(DIAL_TIMER_BUNDLE_PREFIX).dialtimer.complication";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		F39B36E5B5744BD0B4DEC34C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB47E2C900DC5D9DCDC747BC /* Signing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2A60D0CCAE6B57DC1DC594B /* Build configuration list for PBXNativeTarget "DialTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9400F52FF2D94CE64B4E82B5 /* Debug */,
+				5AE4604C8556386B859049C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D424D3554DE59C43DFBC8345 /* Build configuration list for PBXNativeTarget "TimerComplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330E938608F02F9242D88CDF /* Debug */,
+				B888AB59A8AB80C75576AE08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FE7D2FF41D797FC6CA68CA4F /* Build configuration list for PBXProject "DialTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F39B36E5B5744BD0B4DEC34C /* Debug */,
+				953230C2AA5392A3D2B519EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1E371832C202F0BFF737053 /* Project object */;
+}

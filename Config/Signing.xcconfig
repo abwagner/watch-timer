@@ -1,0 +1,5 @@
+// Public defaults. Device signing is configured in the ignored local override.
+DEVELOPMENT_TEAM =
+DIAL_TIMER_BUNDLE_PREFIX = com.example
+
+#include? "Signing.local.xcconfig"
